@@ -9,5 +9,5 @@ describe 'navigate' do
 
   it 'shows the title on the show page in a h1 tag' do
     visit "/posts/#{@post.id}"
-    expect(page).to have_css("h1", text: "A Time To Kill")
+    expect(page).to have_css(text: "A Time To Kill")
   end
